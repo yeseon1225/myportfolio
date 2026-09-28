@@ -4,11 +4,11 @@
   --ink: #20221f;
   --muted: #777a72;
   --line: #dedfd7;
-  --green: #c6f36b;
+  --green: #f3b4d0;
   --mono: "DM Mono", monospace;
   --sans: "Manrope", "Noto Sans KR", sans-serif;
   --script: "Caveat", "Gaegu", cursive;
-  --text-gradient: linear-gradient(115deg, #506c2e 4%, #526ba5 55%, #8c68a9 100%);
+  --text-gradient: linear-gradient(115deg, #d94d91 4%, #bd4f91 55%, #8c68a9 100%);
 }
 
 * {
@@ -38,6 +38,7 @@ button {
 }
 
 .site-header {
+  position: relative;
   height: 76px;
   display: flex;
   align-items: center;
@@ -47,16 +48,19 @@ button {
 }
 
 .wordmark {
+  position: absolute;
+  left: 50%;
   font-size: 22px;
   font-weight: 800;
-  letter-spacing: -1.5px;
+  letter-spacing: -0.06em;
+  transform: translateX(-50%);
 }
 
 .wordmark span,
 .period,
 .section-heading h2 > span,
 .contact h2 > span {
-  color: #86b834;
+  color: #d94d91;
 }
 
 .wordmark,
@@ -75,7 +79,7 @@ button {
 .primary-navigation {
   display: flex;
   gap: 39px;
-  margin-left: 80px;
+  margin-left: 0;
 }
 
 .primary-navigation a,
@@ -104,8 +108,8 @@ button {
   width: 7px;
   height: 7px;
   border-radius: 50%;
-  background: #85b83d;
-  box-shadow: 0 0 0 4px rgba(133, 184, 61, 0.14);
+  background: #df609b;
+  box-shadow: 0 0 0 4px rgba(223, 96, 155, 0.16);
 }
 
 .menu-toggle {
@@ -161,7 +165,7 @@ button {
   display: block;
   width: 24px;
   height: 1px;
-  background: #8da75e;
+  background: #d986ad;
 }
 
 .hero h1 {
@@ -297,7 +301,7 @@ button {
 }
 
 .art-center span {
-  color: #6d941f;
+  color: #bd4f91;
 }
 
 .art-label {
@@ -320,7 +324,7 @@ button {
 
 .art-cross {
   position: absolute;
-  color: #8ca353;
+  color: #bd6796;
   font-size: 19px;
 }
 
@@ -520,7 +524,7 @@ button {
   justify-content: center;
   align-self: center;
   margin-top: 11px;
-  border: 5px solid #d7eda9;
+  border: 5px solid #f4d4e3;
   border-radius: 50%;
   color: #727a62;
   font-size: 6px;
@@ -541,7 +545,7 @@ button {
   margin-top: auto;
   padding: 7px 5px;
   border-radius: 9px;
-  background: #c6f36b;
+  background: #f3b4d0;
   font-size: 6px;
   font-weight: 700;
   text-align: center;
@@ -637,7 +641,7 @@ button {
   width: 28px;
   height: 13px;
   border-radius: 100% 0 100% 0;
-  background: #738167;
+  background: #b58a9c;
   content: "";
 }
 
@@ -759,7 +763,7 @@ button {
   place-items: center;
   border: 3px solid #e5e9de;
   border-radius: 50%;
-  background: #a5bd7b;
+  background: #d99ab6;
   font-size: 9px;
 }
 
@@ -776,14 +780,14 @@ button {
 .spot-three {
   top: 18%;
   right: 25%;
-  background: #e5c77b;
+  background: #edb6ce;
 }
 
 .map-pin {
   position: absolute;
   top: 45%;
   left: 54%;
-  color: #a8644e;
+  color: #b64f7d;
   font-size: 25px;
   text-shadow: 0 2px 0 #f6efe0;
 }
@@ -860,7 +864,7 @@ button {
 }
 
 .contact-star {
-  color: #91b84d;
+  color: #d95794;
   font-size: 24px;
 }
 
@@ -892,11 +896,11 @@ button {
 }
 
 .contact-email:hover {
-  border-color: #80a83d;
+  border-color: #d95794;
 }
 
 .contact-email span {
-  color: #80a83d;
+  color: #d95794;
   font-size: 17px;
 }
 
@@ -933,15 +937,14 @@ button {
   }
 
   .availability {
-    margin-left: auto;
-    margin-right: 21px;
-    font-size: 11px;
+    display: none;
   }
 
   .menu-toggle {
     width: 35px;
     height: 35px;
     display: flex;
+    margin-left: auto;
     flex-direction: column;
     align-items: center;
     justify-content: center;
