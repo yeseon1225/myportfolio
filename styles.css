@@ -8,7 +8,7 @@
   --mono: "DM Mono", monospace;
   --sans: "Manrope", "Noto Sans KR", sans-serif;
   --script: "Caveat", "Gaegu", cursive;
-  --text-gradient: linear-gradient(115deg, #d94d91 4%, #bd4f91 55%, #8c68a9 100%);
+  --text-gradient: linear-gradient(115deg, #171717 4%, #171717 55%, #171717 100%);
 }
 
 * {
@@ -60,7 +60,7 @@ button {
 .period,
 .section-heading h2 > span,
 .contact h2 > span {
-  color: #d94d91;
+  color: #171717;
 }
 
 .wordmark,
@@ -69,11 +69,8 @@ button {
 .project-info h3,
 .contact h2,
 .contact-email {
-  background-image: var(--text-gradient);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  -webkit-text-fill-color: transparent;
+  color: #171717;
+  -webkit-text-fill-color: #171717;
 }
 
 .primary-navigation {
@@ -900,7 +897,7 @@ button {
 }
 
 .contact-email span {
-  color: #d95794;
+  color: #171717;
   font-size: 17px;
 }
 
